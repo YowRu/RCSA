@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body{
+      padding-bottom: 43px;
+}
+
 #canvas-basic {
   display: block;
   width: 100vw;
