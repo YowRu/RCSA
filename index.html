@@ -93,9 +93,11 @@
       </button>
     </div>
     <div class="form">
+      <img src="img/drmn.png" class="drmn">
       <input type="text" class="name" placeholder="請輸入您的姓名">
       <input type="text" class="phone" placeholder="請輸入您的手機" class="form-control" id="phone">
       <button class="submit">送出</button>
+      <p class="Copyright">Copyright © 2023 Digital RMN Corporation All rights reserved.</p>
     </div>
   </div>
   <script>
@@ -162,8 +164,10 @@
         }
     });
     function reflash() {
-        window.location.replace(location.href);
-      }
+      window.location.replace(location.href);
+    //  document.getElementsByTagName('html')[0].remove();
+    }
+
       $('.submit').click(function () {
         let str= $('.phone').val();
         if($('.name').val()===''){
@@ -176,6 +180,7 @@
           }else{
             setTimeout(function () { Swal.fire('已送出', '', 'success') }, 800);
             setTimeout(reflash, 2000);
+            
           }
           
         }
