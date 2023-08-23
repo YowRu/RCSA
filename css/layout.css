@@ -65,7 +65,7 @@
   background-color: #ffffff32;
   border-radius: 10px;
   margin-bottom: 10px;
-  width: 215px;
+  width: 270px;
   height: 67px;
   margin: 5px 10px;
   cursor: pointer;
@@ -82,12 +82,17 @@
 
 }
 
+.flex img.now {
+  display: none;
+  width: 32px;
+}
+
 .flex .wrapper {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 215px;
+  width: 270px;
   height: 67px;
   color: #fff;
   font-size: 0.9rem;
@@ -122,10 +127,6 @@ input[type=radio] {
   right: 0;
   bottom: 0;
   background: #fff;
-  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
   transition: all 0.8s ease;
 }
 
@@ -147,12 +148,9 @@ input[type=radio] {
   width: 100%;
 }
 
-/* .flex.checked {
-  background: transparent;
-} */
-
 .flex.checked .wrapper {
-  color: #FFA200;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .flex.checked .wrapper:before,
@@ -205,6 +203,28 @@ input[type=radio] {
   }
 }
 
+@-webkit-keyframes submit-btn {
+  0% {
+    background: linear-gradient(0deg, #0A9DAA 0%, #17517E 100%);
+  }
+
+  25% {
+    background: linear-gradient(0deg, #0a75aa 0%, #38177e 100%);
+  }
+
+  50% {
+    background: linear-gradient(0deg, #2f0aaa 0%, #3D026B 100%);
+  }
+
+  75% {
+    background: linear-gradient(0deg, #6f0aaa 0%, #7B045A 100%);
+  }
+
+  100% {
+    background: linear-gradient(0deg, #aa0a75 0%, #7B045A 100%);
+
+  }
+}
 
 .form {
   position: absolute;
@@ -217,31 +237,40 @@ input[type=radio] {
   align-items: center;
   z-index: 11;
   padding-bottom: 20px;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
-    -4px -4px 6px 0 rgba(116, 125, 136, .2),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  padding: 40px 0;
+  border: 3px dotted #fff;
+  box-sizing: border-box;
+  border-right: 0;
+  border-left: 0;
 }
 
 input {
-  width: 215px;
-  height: 36px;
+  width: 270px;
+  height: 56px;
+  font-size: 1rem;
   border: 0;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 0 10px;
   box-sizing: border-box;
   background-color: #ffffff32;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   position: relative;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
     7px 7px 20px 0px rgba(0, 0, 0, .1),
     4px 4px 5px 0px rgba(0, 0, 0, .1);
+  color: #fff;
 }
 
 input:visited,
 input:focus,
 input.visited {
   border: 1px solid #fff;
+  outline: none;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+
 }
 
 ::placeholder {
@@ -263,9 +292,15 @@ input.visited {
 
 .submit {
   border: none;
-  color: #000;
+  color: #fff;
   width: 88px;
   height: 36px;
+  outline: none;
+  animation: submit-btn 18s ease-in-out infinite;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  border-radius: 4px;
 }
 
 .submit:after {
@@ -285,9 +320,6 @@ input.visited {
   transition: all 0.3s ease;
 }
 
-.submit:hover {
-  color: #000;
-}
 
 .submit:hover:after {
   left: auto;
