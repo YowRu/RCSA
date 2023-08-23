@@ -97,6 +97,8 @@
   color: #fff;
   font-size: 0.9rem;
   z-index: 9;
+  padding: 0 30px;
+    box-sizing: border-box;
 }
 
 input[type=radio] {
