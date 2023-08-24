@@ -17,89 +17,91 @@
 </head>
 
 <body>
-  <div id="main">
-    <img src="img/logo.png" class="logo" alt="">
-    <canvas id="canvas-basic"></canvas>
-    <div class="text">
-      <button class="flex" for="1">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/money.png" alt="" class="now">
-            <span>營收倍增不是夢</span>
-            <input type="radio" name="Group" value="1" id="1" />
-          </label>
-        </div>
-      </button>
-      <button class="flex" for="2">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/one.png" alt="" class="now">
-            <span>我要成為業界NO.1</span>
-            <input type="radio" name="Group" value="2" id="2" />
-          </label>
-        </div>
-      </button>
-      <button class="flex" for="3">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/top.png" alt="" class="now">
-            <span>我們要成為業界前三大</span>
-            <input type="radio" name="Group" value="3" id="3" />
-          </label>
-        </div>
-      </button>
-      <button class="flex" for="4">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/heart.png" alt="" class="now">
-            <span>我愛陳教授</span>
-            <input type="radio" name="Group" value="4" id="4" />
-          </label>
-        </div>
-      </button>
-      <button class="flex" for="5">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/excellence.png" alt="" class="now">
-            <span>聯聖超級讚</span>
-            <input type="radio" name="Group" value="5" id="5" />
-          </label>
-        </div>
-      </button>
-      <button class="flex" for="6">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/financial-profit.png" alt="" class="now">
-            <span>每年20%成長一點都不難</span>
-            <input type="radio" name="Group" value="6" id="6" />
-          </label>
-        </div>
-      </button>
-      <button class="flex" for="7">
-        <div class="shiny">
-          <label class="wrapper">
-            <img src="img/star.png" alt="" class="first">
-            <img src="img/muscle.png" alt="" class="now">
-            <span>我不只負責更當責</span>
-            <input type="radio" name="Group" value="7" id="7" />
-          </label>
-        </div>
-      </button>
+  <form action="post">
+    <div id="main">
+      <img src="img/logo.png" class="logo" alt="">
+      <canvas id="canvas-basic"></canvas>
+      <div class="text">
+        <button class="flex" type="button"for="1">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/money.png" alt="" class="now">
+              <span>營收倍增不是夢</span>
+              <input type="radio" name="Group" value="1" id="1" />
+            </label>
+          </div>
+        </button>
+        <button class="flex" type="button"for="2">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/one.png" alt="" class="now">
+              <span>我要成為業界NO.1</span>
+              <input type="radio" name="Group" value="2" id="2" />
+            </label>
+          </div>
+        </button>
+        <button class="flex" type="button"for="3">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/top.png" alt="" class="now">
+              <span>我們要成為業界前三大</span>
+              <input type="radio" name="Group" value="3" id="3" />
+            </label>
+          </div>
+        </button>
+        <button class="flex" type="button"for="4">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/heart.png" alt="" class="now">
+              <span>我愛陳教授</span>
+              <input type="radio" name="Group" value="4" id="4" />
+            </label>
+          </div>
+        </button>
+        <button class="flex" type="button"for="5">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/excellence.png" alt="" class="now">
+              <span>聯聖超級讚</span>
+              <input type="radio" name="Group" value="5" id="5" />
+            </label>
+          </div>
+        </button>
+        <button class="flex" type="button"for="6">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/financial-profit.png" alt="" class="now">
+              <span>每年20%成長一點都不難</span>
+              <input type="radio" name="Group" value="6" id="6" />
+            </label>
+          </div>
+        </button>
+        <button class="flex" type="button"for="7">
+          <div class="shiny">
+            <label class="wrapper">
+              <img src="img/star.png" alt="" class="first">
+              <img src="img/muscle.png" alt="" class="now">
+              <span>我不只負責更當責</span>
+              <input type="radio" name="Group" value="7" id="7" />
+            </label>
+          </div>
+        </button>
+      </div>
+      <div class="form">
+        <img src="img/drmn.png" class="drmn">
+        <input type="text" class="name" placeholder="請輸入您的姓名">
+        <input type="text" class="phone" placeholder="請輸入您的手機" class="form-control" id="phone">
+        <button class="submit" type="submit">送出</button>
+        <p class="Copyright">Copyright © 2023 Digital RMN Corporation All rights reserved.</p>
+      </div>
     </div>
-    <div class="form">
-      <img src="img/drmn.png" class="drmn">
-      <input type="text" class="name" placeholder="請輸入您的姓名">
-      <input type="text" class="phone" placeholder="請輸入您的手機" class="form-control" id="phone">
-      <button class="submit">送出</button>
-      <p class="Copyright">Copyright © 2023 Digital RMN Corporation All rights reserved.</p>
-    </div>
-  </div>
+  </form>
   <script>
     $(document).ready(function () {
       let H = $(window).height();
@@ -147,42 +149,43 @@
         $(this).siblings('input').removeClass('visited');
       })
       const MobileReg = /^(09)[0-9]{8}$/;
-      $('.phone').change(function(){
-        if($('.phone').val()===''){
+      $('.phone').change(function () {
+        if ($('.phone').val() === '') {
           Swal.fire('請填寫手機', '', 'info');
-        }else{
-          let str= $('.phone').val();
-          if(str.match(MobileReg) === null){
+        } else {
+          let str = $('.phone').val();
+          if (str.match(MobileReg) === null) {
             Swal.fire('手機資料有誤', '', 'info');
           }
         }
       });
 
-      $('.name').change(function(){
-        if($('.name').val()===''){
+      $('.name').change(function () {
+        if ($('.name').val() === '') {
           Swal.fire('請填寫姓名', '', 'info');
         }
-    });
-    function reflash() {
-      window.location.replace(location.href);
-    //  document.getElementsByTagName('html')[0].remove();
-    }
-
-      $('.submit').click(function () {
-        let str= $('.phone').val();
-        if($('.name').val()===''){
+      });
+      function reflash() {
+        window.location.replace(location.href);
+      }
+     
+      $('.submit').click(function (e) {
+        e.preventDefault();
+      
+        let str = $('.phone').val();
+        if( !$('button[type="button"]').hasClass('checked')){
+          Swal.fire('請選擇金句', '', 'info');
+        }else if ($('.name').val() === '') {
           Swal.fire('請填寫姓名', '', 'info');
-        }else if($('.phone').val()===''){
+        } else if ($('.phone').val() === '') {
           Swal.fire('請填寫手機', '', 'info');
-        }else if ($('.name').val() !== '' && $('.phone').val() !== '') {
-          if(str.match(MobileReg) === null){
+        } else if ($('.name').val() !== '' && $('.phone').val() !== '') {
+          if (str.match(MobileReg) === null) {
             Swal.fire('手機資料有誤', '', 'info');
-          }else{
+          } else {
             setTimeout(function () { Swal.fire('已送出', '', 'success') }, 800);
             setTimeout(reflash, 2000);
-            
           }
-          
         }
       });
 
